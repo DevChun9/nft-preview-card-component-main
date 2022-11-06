@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5 {
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+#one {
+    height: 100vh;
+}
+
+.card {
+    width: 25%;
+    height: 80%;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.5rem;
+    position: relative;
+    top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__image--nft {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.card__image--hover {
+    width: 15%;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    bottom: 12rem;
+    display: none;
+}
+
+.card__txt h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+    font-size: 20px;
+}
+
+.card__txt h1:hover {
+    color: hsl(178, 100%, 50%);
+    transition: ease-out 500ms;
+}
+
+.card__txt h2 {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+
+.card__price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__price h3 {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+
+.price {
+    color: hsl(178, 100%, 50%);
+    margin: 0 0 0 0.5rem;
+}
+
+.card__profile {
+    display: flex;
+    align-items: center;
+}
+
+.card__profile img {
+    width: 10%;
+    border: solid white 1px;
+    border-radius: 100%;
+}
+
+.card__profile h3 {
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+.card__profile h3:hover {
+    color: hsl(178, 100%, 50%);
+    transition: ease-out 500ms;
+}
+
+span {
+    color: hsl(215, 51%, 70%);
+}
+
+hr {
+    height: 1px;
+    background-color: hsl(215, 32%, 27%);
+    border: none;
+}
+
+@media (max-width: 600px) {
+    .card{
+        width: 90%;
+    }
+}
+
+@media (min-width:600px) and (max-width:830px) {
+    .card {
+        width: 50%;
+    }
+}
+
+@media (min-width:830px) and (max-width: 1200px) {
+    .card {
+        width: 30%;
+    }
+}
